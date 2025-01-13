@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thank You</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  
+  <style>
+    html{
+      font-family: helvetica;
+    }
+    .navbar-custom {
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1000px;
+      border-radius: 25px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      background-color: #f8f9fa;
+      z-index: 1000;
+    }
+
+    .kotakhitam {
+      background-color: rgb(16, 24, 32);
+      height: 110px;
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .gambaratas {
+      position: relative;
+      width: 100%;
+      height: 500px; 
+    }
+
+    .gambardiatas {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+    }
+
+    .judul {
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      color: white;
+      text-align: left;
+      z-index: 1;
+      animation: slideInFade 0.8s ease-out forwards;
+    }
+
+    h1 {
+      font-size: 80px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 35px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .mantab {
+      height: 500px; 
+      width: 100%;
+      display: flex; 
+      flex-direction: column;  
+      align-items: center; 
+      text-align: center;
+    }
+
+    .Kenalin {
+      margin-top: 120px;
+      font-weight: bold;
+      font-size: 75px;
+      color: white;
+    }
+
+    .whitebox {
+      position: relative;
+      z-index: 11;
+      top: -100px;
+      background-color: rgb(255, 255, 255);
+      height: 1000px;
+      width: 100%;
+      margin: 20px auto;
+      border-radius: 100px 100px 0px 0px; 
+}
+    .divgambarku{
+      display: flex;              
+      justify-content: center;    
+      align-items: center;   
+    }
+
+    .gambaraku {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      object-fit: cover;
+      margin-top:150px;
+    }
+
+    .aboutme{
+      color: black;
+      font-weight: bold;
+      font-size: 50px;
+    }
+
+    .divaboutme{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .aboutmep{
+      width: 80%;
+      text-align: justify;
+      text-align: center;
+      font-size: 25px;
+    }
+    .divaboutmep{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .divskills{
+      margin-top: 70px;
+      height: 850px;
+    }
+
+    .cardskill{
+      margin-top: 100px;
+    }
+
+   .hover-effect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.hover-effect:hover {
+  transform: translateY(-50px) !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+}
+
+
+
+    @keyframes slideInFade {
+      0% {
+        left: -100%; 
+        opacity: 0;  
+      }
+      100% {
+        left: 20%;   
+        opacity: 1; 
+        transform: translateX(-50%) translateY(-50%);
+      }
+    }
+    .animate-element {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out; /* Haluskan transisi opacity */
+}
+
+
+
+  </style>
+</head>
+<body>
+  <div class="kotakhitam"></div>
+  <div class="gambaratas">
+    <img class="gambardiatas" src="/images/topimages.jpg" alt="Top Image">
+    <div class="judul">
+      <h1>ABIDIN WITULAR</h1>
+      <h3>Desainer Grafis</h3>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-custom">
+    <div class="container">
+      <a class="navbar-brand" href="/subscribe">Subscribe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Subscribed</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/profile">Profile</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="kotakhitam mantab ">
+    <p class="Kenalin animate__animated animate__fadeInUp">Kenalin, Saya Abidin Witular. Si Desainer Grafis</p>
+    <button class="btn btn-success pi-3 btn-lg animate__animated animate__fadeInUp mt-5" onclick="window.location.href='/subscribe'">Subscribe</button>
+  </div>
+  <div class="whitebox">
+    <div class="divgambarku">
+      <img src="/images/1. ABIDIN WITULAR.JPG" alt="..." class="animate-element img-circle img-fluid rounded-circle gambaraku" data-animation="animate__fadeInUp">
+    </div>
+    <div class="divaboutme">
+      <p class="animate-element aboutme" data-animation="animate__fadeInUp">About Me</p>
+    </div>
+    <div class="divaboutmep">
+      <p class="animate-element aboutmep" data-animation="animate__fadeInUp">Halo, saya Abidin Witular, seorang pelajar SMK yang memiliki kecintaan dan keterampilan di bidang desain grafis, multimedia, dan teknologi kreatif. Saya menguasai berbagai keahlian, termasuk desain grafis 3D, video editing, fotografi, ilustrasi, dan manipulasi foto. Dengan dedikasi dan ketekunan, saya terus mengembangkan kemampuan saya untuk menciptakan karya-karya yang inovatif dan berdampak positif. Saya percaya bahwa kreativitas dan keterampilan adalah kunci untuk mencapai tujuan pribadi dan profesional.
+      </p>
+    </div>
+    <div class="kotakhitam divskills">
+      <div style="display: flex; gap: 20px; justify-content: center;">
+        <div class="cardskill" style="display: flex;">
+          <div class="card hover-effect animate-element" data-animation="animate__flipInX" style="width: 18rem;background-color: transparent;margin-inline: 50px;";>
+            <div>
+              <img class="card-img-top p-5" src="/images/adobe-photoshop.png" alt="Card image cap" style="width: 18rem; background-color: rgb(0, 147, 178); border-radius: 35px; position: relative;
+              z-index: 12;top: 30px;";>
+            </div>
+            
+            <div class="card-body"   style="background-color: rgb(19, 107, 125);border-radius:0px 0px 35px 35px">
+              <div class="card-text" style="margin-top: 40px;">
+                <h3 style="margin-top: 20px;color: white;">Photoshop</h3>
+                <p style="color: white; text-align: center;text-align: justifys; margin-top: 20px;">Saya mahir menggunakan Adobe Photoshop untuk desain grafis, poster, dan ilustrasi digital, termasuk manipulasi foto, penggunaan layer dan masking, serta penerapan efek kreatif dan tipografi yang mendukung tampilan visual yang menarik.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card hover-effect animate-element" data-animation="animate__flipInX" style="width: 18rem;background-color: transparent;margin-inline: 50px;";>
+            <div>
+              <img class="card-img-top p-5" src="/images/illustrator.png" alt="Card image cap" style="width: 18rem; background-color: #ff9a00; border-radius: 35px; position: relative;
+              z-index: 12;top: 30px;";>
+            </div>
+            
+            <div class="card-body" style="background-color: #b47518;border-radius:0px 0px 35px 35px">
+              <div class="card-text" style="margin-top: 40px;">
+                <h3 style="margin-top: 20px;color: white;">illustrator</h3>
+                <p style="color: white; text-align: center;text-align: justifys; margin-top: 20px;">
+                  Saya mahir menggunakan Adobe Illustrator untuk membuat desain vektor, logo, ikon, dan ilustrasi. Dengan pen tool, layer, dan gradient, saya menciptakan desain presisi, scalable, dan menarik secara visual.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card hover-effect animate-element" data-animation="animate__flipInX" style="width: 18rem;background-color: transparent;margin-inline: 50px;";>
+            <div>
+              <img class="card-img-top p-5" src="/images/after-effects.png" alt="Card image cap" style="width: 18rem; background-color: #9999ff; border-radius: 35px; position: relative;
+              z-index: 12;top: 30px;";>
+            </div>
+            
+            <div class="card-body" style="background-color: #2626a0;border-radius:0px 0px 35px 35px">
+              <div class="card-text" style="margin-top: 40px;">
+                <h3 style="margin-top: 20px;color: white;">after effects</h3>
+                <p style="color: white; text-align: center;text-align: justifys; margin-top: 20px;">Saya mahir menggunakan Adobe After Effects untuk membuat animasi, motion graphics, dan efek visual. Saya menguasai penggunaan keyframe, masking, dan compositing untuk menghasilkan video yang dinamis dan menarik.</p>
+              </div>
+            </div>
+          </div>
+  
+          <div class="card hover-effect animate-element" data-animation="animate__flipInX" style="width: 18rem;background-color: transparent;margin-inline: 50px;";>
+            <div>
+              <img class="card-img-top p-5" src="/images/pngwing.com.png" alt="Card image cap" style="width: 18rem; background-color: rgb(238, 39, 55); border-radius: 35px; position: relative;
+              z-index: 12;top: 30px; height: 110%;";>
+            </div>
+            
+            <div class="card-body" style="background-color: rgb(175, 39, 47);border-radius:0px 0px 35px 35px">
+              <div class="card-text" style="margin-top: 75px;">
+                <h3 style="margin-top: 20px;color: white;">Blender</h3>
+                <p style="color: white; text-align: center;text-align: justifys; margin-top: 20px;">Saya mahir menggunakan Blender untuk pembuatan model 3D, animasi, dan rendering. Dengan fitur seperti sculpting, texturing, dan rigging, saya menciptakan karya 3D yang realistis dan berkualitas tinggi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+
+
+
+  <!-- Bootstrap JS and Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script>
+   document.addEventListener("DOMContentLoaded", function() {
+  const elements = document.querySelectorAll('.animate-element');
+  
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const animationClass = entry.target.getAttribute('data-animation');
+        entry.target.classList.add('animate__animated', animationClass); // Tambahkan animasi dari data-animation
+        entry.target.style.opacity = 1; // Menampilkan elemen
+        observer.unobserve(entry.target); // Berhenti mengamati setelah animasi berjalan
+      }
+    });
+  }, {
+    threshold: 0.5 // Animasi dimulai ketika 50% elemen terlihat
+  });
+  
+  elements.forEach(element => {
+    observer.observe(element);
+  });
+});
+
+  </script>
+  
+</body>
+</html>
